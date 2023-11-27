@@ -1,0 +1,69 @@
+.element {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  padding: 1rem;
+  cursor: no-drop;
+  aspect-ratio: 1/1;
+}
+.element.over > div {
+  border: 3px dotted #666;
+}
+.element.active {
+  opacity: 1;
+  cursor: move;
+}
+.person {
+  border: 3px solid #666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+.verb {
+  border: 3px solid #666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.complemet1 {
+  border: 3px solid #666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: red;
+}
+.complemet2 {
+  border: 3px solid #666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: blue;
+}
+.complemet3 {
+  border: 3px solid #666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: green;
+}
+
+.type-phrase{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
