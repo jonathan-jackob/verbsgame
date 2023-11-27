@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form class="mt-3">
+        <div class="row">
+          <div class="col-2">
+            <div class="form-group">
+              <label for="">Noun</label>
+              <select class="form-control" name="" id="">
+                <option value="i">I</option>
+                <option value="he">He</option>
+                <option value="she">She</option>
+                <option value="it">It</option>
+                <option value="we">We</option>
+                <option value="they">They</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-2">
+            <div class="form-group">
+              <label for="">Verb</label>
+              <select class="form-control" name="" id="">
+                <option value="can">can</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-2">
+            <label for="">Complement</label>
+            <div class="form-group">
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+
+          <div class="col-2">
+            <label for="">Complement</label>
+            <div class="form-group">
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+
+          <div class="col-2">
+            <label for="">Complement</label>
+            <div class="form-group">
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <div class="row mb-5">
+        <div class="col-2">
+          <div draggable="true" class="element active">
+            <div class="person" data-type="person">
+              <i class="fa-solid fa-circle-user fa-2xl"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <div draggable="true" class="element active">
+            <div class="verb" data-type="verb">VERB</div>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <div draggable="true" class="element active">
+            <div class="complemet1" data-type="complemet1">COMPLEMENT</div>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <div draggable="true" class="element active">
+            <div class="complemet2" data-type="complemet2">COMPLEMENT</div>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <div draggable="true" class="element active">
+            <div class="complemet3" data-type="complemet3">COMPLEMENT</div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+      <div class="row">
+        <div class="col-1 type-phrase">
+          <i class="fa-solid fa-plus fa-2xl"></i>
+        </div>
+        <div class="col-2">
+          <div draggable="true" class="element">
+            <div class="person" data-type="person"></div>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <div draggable="true" class="element">
+            <div class="verb" data-type="verb"></div>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <div draggable="true" class="element">
+            <div class="complemet1" data-type="complemet1"></div>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <div draggable="true" class="element">
+            <div class="complemet2" data-type="complemet2"></div>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <div draggable="true" class="element">
+            <div class="complemet3" data-type="complemet3"></div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-1 type-phrase">
+          <i class="fa-solid fa-question fa-2xl"></i>
+        </div>
+        <div class="col-2">
+          <div draggable="true" class="element">
+            <div class="verb" data-type="verb"></div>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <div draggable="true" class="element">
+            <div class="person" data-type="person"></div>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <div draggable="true" class="element">
+            <div class="complemet1" data-type="complemet1"></div>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <div draggable="true" class="element">
+            <div class="complemet2" data-type="complemet2"></div>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <div draggable="true" class="element">
+            <div class="complemet3" data-type="complemet3"></div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-1 type-phrase">
+          <i class="fa-solid fa-minus fa-2xl"></i>
+        </div>
+        <div class="col-2">
+          <div draggable="true" class="element">
+            <div class="person" data-type="person"></div>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <div draggable="true" class="element">
+            <div class="verb" data-type="verb"></div>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <div draggable="true" class="element">
+            <div class="complemet1" data-type="complemet1"></div>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <div draggable="true" class="element">
+            <div class="complemet2" data-type="complemet2"></div>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <div draggable="true" class="element">
+            <div class="complemet3" data-type="complemet3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
